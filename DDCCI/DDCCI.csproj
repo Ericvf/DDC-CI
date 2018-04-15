@@ -41,7 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Parser.cs" />
+    <Compile Include="DisplayService.cs" />
+    <Compile Include="WindowsAPI\dxva2.cs" />
+    <Compile Include="INodeFormatter.cs" />
+    <Compile Include="NodeFormatter.cs" />
+    <Compile Include="Parser\CapabilitiesParser.cs" />
+    <Compile Include="Parser\Nodes\GroupValueNode.cs" />
+    <Compile Include="Parser\Nodes\INode.cs" />
+    <Compile Include="Parser\IParser.cs" />
+    <Compile Include="Parser\Nodes\RootNode.cs" />
+    <Compile Include="RecursiveSelect.cs" />
     <Compile Include="Tokenizer\Tokens\CloseToken.cs" />
     <Compile Include="Tokenizer\Tokens\IToken.cs" />
     <Compile Include="Tokenizer\ITokenFilter.cs" />
@@ -53,6 +62,9 @@
     <Compile Include="Tokenizer\Tokenizer.cs" />
     <Compile Include="Tokenizer\Tokens\WhitespaceToken.cs" />
     <Compile Include="Tokenizer\Tokens\WordToken.cs" />
+    <Compile Include="Parser\Nodes\ValueNode.cs" />
+    <Compile Include="WindowsAPI\User32.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

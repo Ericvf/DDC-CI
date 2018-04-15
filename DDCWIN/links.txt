@@ -1,0 +1,23 @@
+﻿
+Brightness Control
+https://github.com/alexhorn/BrightnessControl/blob/master/DisplayConfiguration.cs
+
+
+ddcutil (linux)
+http://www.ddcutil.com/cap_u3011_verbose_output/
+https://github.com/rockowitz/ddcutil/blob/1c60ee29e56edad5ecf5af7fa11a0c11f74a951a/src/vcp/vcp_feature_codes.c
+
+ddc / mccs protocol 
+http://measure.feld.cvut.cz/groups/micro/soucastky/spec/serial_p/Access_bus_spec_3_0.pdf
+http://www.usb.org/developers/hidpage/usbmon10.pdf
+
+ddc ci tool
+https://github.com/bhuvanchandra/ddcci
+
+Windows API documentation
+https://msdn.microsoft.com/en-us/library/windows/desktop/dd692980(v=vs.85).aspx
+
+Tokenizer/Parser
+http://blog.klipse.tech/javascript/2017/02/08/tiny-compiler-tokenizer.html
+https://blog.xojo.com/2018/03/26/compilers-108-code-generation/
+

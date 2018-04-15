@@ -24,7 +24,7 @@ namespace DDCCI
                 if (token != null)
                     yield return token;
             }
-        }
+        }   
 
         private IToken GetToken(Queue<char> characterQueue)
         {
