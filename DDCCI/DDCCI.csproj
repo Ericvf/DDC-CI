@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DisplayService.cs" />
+    <Compile Include="IDisplayService.cs" />
+    <Compile Include="MonitorInfo.cs" />
+    <Compile Include="VCPCapability.cs" />
     <Compile Include="WindowsAPI\dxva2.cs" />
     <Compile Include="INodeFormatter.cs" />
     <Compile Include="NodeFormatter.cs" />

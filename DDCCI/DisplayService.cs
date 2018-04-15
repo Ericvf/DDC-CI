@@ -1,43 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
 namespace DDCCI
 {
-    using static User32;
     using static dxva2;
-    using System.Linq;
-
-    public interface IDisplayService
-    {
-        IEnumerable<MonitorInfo> GetMonitors();
-
-        string GetCapabilities(MonitorInfo monitorInfo);
-
-        IEnumerable<VCPCapability> GetVCPCapabilities(MonitorInfo monitorInfo);
-
-        void SetVCPCapability(MonitorInfo monitorInfo, char code, int val);
-    }
-
-    public class VCPCapability
-    {
-        public string Name { get; set; }
-
-        public char OptCode { get; set; }
-
-        public uint Value { get; set; }
-
-        public uint MaxValue { get; set; }
-    }
-
-    public class MonitorInfo
-    {
-        public IntPtr Desktop { get; set; }
-        public IntPtr Handle { get; set; }
-        public string Name { get; set; }
-    }
+    using static User32;
 
     public class DisplayService : IDisplayService
     {
