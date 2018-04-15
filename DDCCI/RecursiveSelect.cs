@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace DDCCI
 {
+    /// <summary>
+    /// https://bitlush.com/blog/recursive-select-in-c-sharp-and-linq
+    /// </summary>
     public static class RecursiveSelectExtensions
     {
         public static IEnumerable<TSource> RecursiveSelect<TSource>(this IEnumerable<TSource> source,

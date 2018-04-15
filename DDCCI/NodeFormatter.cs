@@ -164,9 +164,6 @@ namespace DDCCI
                 result = lookupTables[parentKey](node.Value.ToLower());
 
             return result;
-            return result != null
-                ? result
-                : node.Value;
         }
     }
 }
