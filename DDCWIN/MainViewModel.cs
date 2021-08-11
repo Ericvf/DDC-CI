@@ -56,10 +56,12 @@ namespace DDCWIN
             foreach (var monitor in displayMonitors)
             {
                 var vcpCapabilities = DisplayService.GetVCPCapabilities(monitor);
+                var capabilities = DisplayService.GetCapabilities(monitor);
                 monitors.Add(new MonitorViewModel
                 {
                     MonitorInfo = monitor,
-                    VCPCapabilities = vcpCapabilities
+                    VCPCapabilities = vcpCapabilities,
+                    Capabilities = capabilities,
                 });
             }
         }
